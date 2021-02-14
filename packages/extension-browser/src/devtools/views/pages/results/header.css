@@ -1,0 +1,45 @@
+.root {
+    background-color: var(--base-bg);
+    padding: 1rem 0 2.25rem;
+}
+
+.top {
+    align-items: start;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr auto auto;
+}
+
+.headerText {
+    font-size: 0.875rem;
+    margin: 0.5rem 0 0;
+    word-break: break-all;
+    width: 100%;
+}
+
+.title {
+    font-weight: var(--bold);
+    margin: 0;
+}
+
+.actions {
+    display: grid;
+    gap: 0.5rem; /* 8px */
+    margin-top: 1.5rem; /* 24px */
+    grid-auto-columns: max-content;
+}
+
+/* Horizontal layout */
+@media (min-width: 36rem /* 576px */) {
+    .actions {
+        grid-template-columns: auto auto 1fr;
+    }
+}
+
+.showPassedHints {
+    text-align: right;
+}
+
+.showPassedHintsLabel {
+    margin-bottom: 0.125rem;
+}

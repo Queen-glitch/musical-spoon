@@ -1,0 +1,18 @@
+parameters:
+  name: ''
+  vmImage: ''
+  condition: ''
+  worker: ''
+
+jobs:
+- job: ${{ parameters.name }}
+  pool:
+    vmImage: ${{ parameters.vmImage }}
+  strategy:
+    matrix:
+      node_12_x:
+        node_version: 12.x
+  steps:
+  - template: ${{ parameters.worker }}
+  timeoutInMinutes: 120
+  condition: ${{ parameters.condition }}
