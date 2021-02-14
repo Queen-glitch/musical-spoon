@@ -1,0 +1,7 @@
+coverage
+dist
+node_modules
+fixtures
+packages/hint-webpack-config/docs/is-valid.md
+*.d.ts
+packages/hint/hint-report
