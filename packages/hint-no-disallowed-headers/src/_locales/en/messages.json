@@ -1,0 +1,18 @@
+{
+    "description": {
+        "description": "Metadata description",
+        "message": "Disallow certain HTTP response headers"
+    },
+    "disallowedHeaders": {
+        "description": "Report message when the response includes multiple disallowed headers",
+        "message": "Response should not include disallowed headers: $1"
+    },
+    "headerValueShouldOnlyContain": {
+        "description": "Report message when the 'server' header contains more than the server name",
+        "message": "The 'server' header should only contain the server name."
+    },
+    "name": {
+        "description": "Metadata name",
+        "message": "Disallowed HTTP headers"
+    }
+}

@@ -1,0 +1,27 @@
+.root {
+    border-bottom: 1px solid var(--border-alt-color);
+    margin-top: 0.75rem; /* 12px */
+}
+
+.root:first-child {
+    margin-top: 0;
+}
+
+.summary {
+    background-color: var(--base-bg);
+    line-height: 1.75rem; /* 28px */
+    padding: 0;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.results {
+    display: grid;
+    gap: 0.5625rem; /* 9px */
+    justify-items: start;
+    margin-bottom: 1.25rem; /* 20px */
+    margin-top: 0.5625rem; /* 9px */
+    padding-left: 1rem; /* 16px */
+}

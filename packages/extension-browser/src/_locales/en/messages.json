@@ -1,0 +1,250 @@
+{
+    "analyzeAgainButtonLabel": {
+        "message": "Analyze again",
+        "description": "Label for button to restart analysis."
+    },
+    "startScanButtonLabel": {
+        "message": "Start scan",
+        "description": "Label for button to start analysis."
+    },
+    "scanAgainButtonLabel": {
+        "message": "Scan again",
+        "description": "Label for button to scan again."
+    },
+    "newScanButtonLabel": {
+        "message": "Configure a new scan",
+        "description": "Label for button to configure a new scan."
+    },
+    "analyzingStatus": {
+        "message": "Analyzing...",
+        "description": "Status text shown while running."
+    },
+    "cancelAnalysisButtonLabel": {
+        "message": "Cancel analysis",
+        "description": "Label for button to stop analysis."
+    },
+    "categoriesTitle": {
+        "message": "Categories",
+        "description": "Title of the categories sub-section on the configuration page."
+    },
+    "close": {
+        "message": "Close",
+        "description": "Label for the close button in the notification"
+    },
+    "checkForBestPracticesDescription": {
+        "message": "Check for best practices and common errors with your site's accessibility, speed, security, and more.",
+        "description": "Brief description of what webhint does."
+    },
+    "customBrowsersLabel": {
+        "message": "Custom query",
+        "description": "Label for target browsers option to use a custom query string."
+    },
+    "customBrowsersValueLabel": {
+        "message": "Target browsers custom query value",
+        "description": "Label for target browsers custom query input field."
+    },
+    "customResourcesLabel": {
+        "message": "Custom expression",
+        "description": "Label for ignored resources option to use a custom regular expression."
+    },
+    "customResourcesValueLabel": {
+        "message": "Ignored resources custom expression value",
+        "description": "Label for ignored resources custom expression input field."
+    },
+    "didYouKnowThat": {
+        "message": "Did you know that...",
+        "description": "Label for the analyzing screen."
+    },
+    "differentOriginLabel": {
+        "message": "Different origin",
+        "description": "Label for option to ignore only external resources on the page."
+    },
+    "enable": {
+        "message": "Enable",
+        "description": "Label for button to enable telemetry"
+    },
+    "errorDetails": {
+        "message": "Error details",
+        "description": "Text displayed for option to expand and show error details."
+    },
+    "errorIssuesLabel": {
+        "message": "Errors: $1",
+        "description": "Label for count of hints with severity error, e.g. 'Errors: 2'."
+    },
+    "errorLabel": {
+        "message": "Error",
+        "description": "Label for option to choose error as minimum hint severity."
+    },
+    "errorMessage": {
+        "message": "There was an error running webhint. Please try again. If the error still occurs: ",
+        "description": "Message informing users what to do when an error occurs."
+    },
+    "errorTitle": {
+        "message": "Scan Error",
+        "description": "Title of page displayed after an error occurs."
+    },
+    "feedback": {
+        "message": "Feedback",
+        "description": "Label for the feedback button"
+    },
+    "helpUs": {
+        "message": "Help us improve webhint by sending limited usage information (no personal information or URLs will be sent).",
+        "description": "Label for telemetry opt-in popup"
+    },
+    "inspectElement": {
+        "message": "Inspect Element",
+        "description": "Label for a button to link to a specific element in the Elements panel."
+    },
+    "scanResultTitle": {
+        "message": "Hints: Scan Results",
+        "description": "Label for the title in the header in the result page."
+    },
+    "hintIssuesLabel": {
+        "message": "Hints: $1",
+        "description": "Label for count of hints with severity hint, e.g. 'Hints: 2'."
+    },
+    "hintLabel": {
+        "message": "Hint",
+        "description": "Label for option to choose hint as minimum hint severity."
+    },
+    "hintsTitle": {
+        "message": "Hints",
+        "description": "Title displayed for the tool tab."
+    },
+    "ignoredResourcesTitle": {
+        "message": "Ignored resources",
+        "description": "Title of the ignored resouces sub-section on the configuration page."
+    },
+    "informationIssuesLabel": {
+        "message": "Informations: $1",
+        "description": "Label for count of hints with severity information, e.g. 'Informations: 2'."
+    },
+    "informationLabel": {
+        "message": "Information",
+        "description": "Label for option to choose information as minimum hint severity."
+    },
+    "learnWhyLabel": {
+        "message": "Learn why this is important",
+        "description": "Label for link to additional documentation for a passed test."
+    },
+    "learnWhyAndHowLabel": {
+        "message": "Learn why this is important and how to fix it",
+        "description": "Label for link to additional documentation for a failed test."
+    },
+    "learnMore": {
+        "message": "Learn more.",
+        "description": "Label for link to additional information about the information collected for telemetry."
+    },
+    "noIssuesLabel": {
+        "message": "No issues",
+        "description": "Label for a hint with no issues."
+    },
+    "noneLabel": {
+        "message": "None",
+        "description": "Label for option to not ignore any resources on the page."
+    },
+    "noThanks": {
+        "message": "No Thanks",
+        "description": "Label for button to disable telemetry."
+    },
+    "openAnIssue": {
+        "message": "open an issue",
+        "description": "Text for a link to open an issue."
+    },
+    "passedStatus": {
+        "message": "PASSED",
+        "description": "Message shown when all tests have passed."
+    },
+    "pictureOfMascot": {
+        "message": "A picture of webhint's mascot, Nellie the Narwhal, working at a computer.",
+        "description": "Description for image shown while analyzing."
+    },
+    "poweredByLabel": {
+        "message": "Powered by",
+        "description": "Label displayed before link to the webhint website."
+    },
+    "recommendedSettingsLabel": {
+        "message": "Recommended settings",
+        "description": "Label for option to use recommended target browsers."
+    },
+    "restoreDefaultsLabel": {
+        "message": "Restore defaults",
+        "description": "Label for button to restore default settings."
+    },
+    "seeExpressionInstructionsLabel": {
+        "message": "See expression instructions",
+        "description": "Label for link to instructions for ignoring page resources."
+    },
+    "seeQueryInstructionsLabel": {
+        "message": "See query instructions",
+        "description": "Label for link to instructions for selecting target browsers."
+    },
+    "settings": {
+        "message": "Settings",
+        "description": "Label settings details/summary."
+    },
+    "severityTitle": {
+        "message": "Minimum hint severity",
+        "description": "Title of the minimum hint severity sub-section on the configuration page."
+    },
+    "showPassedHintsLabel": {
+        "message": "Show passed hints",
+        "description": "Label for toggle to hide/show groups of hints which passed."
+    },
+    "statAverageLoadTimeForMobileSites": {
+        "message": "The average load time for mobile sites is $1 seconds over 3G connections.",
+        "description": "Statistic about the average load time for mobile websites."
+    },
+    "statJavaScriptTakesMoreToProcessThanJPEG": {
+        "message": "1MB of JavaScript takes more time to process than 1MB of a JPEG file.",
+        "description": "Statistic about how JavaScript is more expensive to load."
+    },
+    "statMedianSiteSize": {
+        "message": "The median site size is $1KB.",
+        "description": "Statistic about the average site size."
+    },
+    "statMobileSiteVisitsAbandonedByLoad": {
+        "message": "$1% of mobile site visits are abandoned if pages take longer than $2 seconds to load.",
+        "description": "Statistic about the percent drop-off of mobile visits based on load times."
+    },
+    "statResourcesAreNotCacheable": {
+        "message": "$1% of resources aren't cacheable.",
+        "description": "Statistic about the precentage of web resources which can't be cached."
+    },
+    "statSitesCompressResourcesTheyShouldNot": {
+        "message": "$1% of sites compress at least one resource they shouldn't.",
+        "description": "Statistic about the percentage of websites which needlessly compress."
+    },
+    "statSitesForgetToCompressResources": {
+        "message": "$1% of sites forget to compress one or more resources.",
+        "description": "Statistic about the percentage of websites which forget to compress."
+    },
+    "statWebsitesPerformARedirect": {
+        "message": "$1% of websites perform a redirect for at least one resource.",
+        "description": "Statistic about the percentage of websites performing redirects."
+    },
+    "statWebsitesUsingLibrariesWithKnownVulnerabilities": {
+        "message": "$1% of websites use a JavaScript library with known vulnerabilities.",
+        "description": "Statistic about the percentage of websites with vulnerable libraries."
+    },
+    "targetBrowsersTitle": {
+        "message": "Target browsers",
+        "description": "Title of the target browsers sub-section on the configuration page."
+    },
+    "targetUrl": {
+        "message": "URL: $1",
+        "description": "Label for the result page with the url analyzed."
+    },
+    "telemetry": {
+        "message": "Enable telemetry",
+        "description": "Label for the setting to enable/disable telemetry."
+    },
+    "warningIssuesLabel": {
+        "message": "Warnings: $1",
+        "description": "Label for count of hints with severity warning, e.g. 'Warnings: 2'."
+    },
+    "warningLabel": {
+        "message": "Warning",
+        "description": "Label for option to choose warning as minimum hint severity."
+    }
+}

@@ -1,0 +1,23 @@
+# PRs
+# Run latest version of node in all platforms
+jobs:
+  - template: latest-version.yml
+    parameters:
+        name: Linux_PR
+        vmImage: 'ubuntu-latest'
+        condition: and(eq(variables['Build.Reason'], 'PullRequest'), not(startsWith(variables['System.PullRequest.SourceBranch'], 'dependabot/')))
+        worker: 'standard.yml'
+
+  - template: latest-version.yml
+    parameters:
+        name: macOS_PR
+        vmImage: 'macOS-latest'
+        condition: and(eq(variables['Build.Reason'], 'PullRequest'), not(startsWith(variables['System.PullRequest.SourceBranch'], 'dependabot/')))
+        worker: 'standard.yml'
+
+  - template: latest-version.yml
+    parameters:
+        name: Windows_PR
+        vmImage: 'windows-latest'
+        condition: and(eq(variables['Build.Reason'], 'PullRequest'), not(startsWith(variables['System.PullRequest.SourceBranch'], 'dependabot/')))
+        worker: 'standard.yml'
