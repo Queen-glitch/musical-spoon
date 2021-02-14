@@ -1,0 +1,15 @@
+.root {
+    align-items: start;
+    background-color: var(--base-bg);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr auto;
+    justify-items: start;
+    margin-top: 1rem;
+}
+
+.help {
+    font-size: var(--font-size);
+    font-weight: normal;
+    margin: 0;
+}
