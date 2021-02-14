@@ -1,0 +1,24 @@
+# Daily full run
+# Run all platforms all supported versions
+# Scheduled via the Dashboard
+jobs:
+  - template: all-versions.yml
+    parameters:
+        name: Linux_scheduled
+        vmImage: 'ubuntu-latest'
+        condition: eq(variables['Build.Reason'], 'Schedule')
+        worker: 'full.yml'
+
+  - template: all-versions.yml
+    parameters:
+        name: macOS_scheduled
+        vmImage: 'macOS-latest'
+        condition: eq(variables['Build.Reason'], 'Schedule')
+        worker: 'full.yml'
+
+  - template: all-versions.yml
+    parameters:
+        name: Windows_scheduled
+        vmImage: 'windows-latest'
+        condition: eq(variables['Build.Reason'], 'Schedule')
+        worker: 'full.yml'

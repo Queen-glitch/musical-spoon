@@ -1,0 +1,33 @@
+.root {
+    background-color: var(--base-bg);
+}
+
+.results {
+    align-items: start;
+    display: grid;
+    gap: 2rem; /* 32px */
+    grid-template-columns: auto 1fr;
+}
+
+.nav {
+    display: none;
+    min-width: 10rem; /* 160px */
+    position: sticky;
+    top: 1rem; /* 16px */
+}
+
+@media (min-width: 48rem /* 768px */) {
+    .nav {
+        display: block;
+    }
+}
+
+.summary {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.poweredBy {
+    margin: 1.75rem 0; /* 28px 0 */
+}
