@@ -1,0 +1,4 @@
+.example {
+    display: grid; /* Report */
+    display: -ms-grid;
+}

@@ -1,0 +1,15 @@
+.problemLink {
+    color: var(--link-alt-color);
+    text-decoration: none;
+    vertical-align: middle;
+    word-break: break-all;
+}
+
+.problemLink:focus {
+    border-bottom: 2px solid var(--base-color);
+    outline: none;
+}
+
+.problemLink:global(:not(.focus-visible)) {
+    border: none;
+}
