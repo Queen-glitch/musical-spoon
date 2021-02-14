@@ -1,0 +1,9 @@
+# Dependabot PRs
+# Run only latest version of node on Linux
+jobs:
+  - template: latest-version.yml
+    parameters:
+        name: Dependabot
+        vmImage: 'ubuntu-latest'
+        condition: and(eq(variables['Build.Reason'], 'PullRequest'), startsWith(variables['System.PullRequest.SourceBranch'], 'dependabot/'))
+        worker: 'standard.yml'
