@@ -1,0 +1,12 @@
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: $(node_version)
+  - task: geeklearningio.gl-vsts-tasks-yarn.yarn-installer-task.YarnInstaller@2
+    displayName: 'Use Yarn 1.x'
+    inputs:
+      checkLatest: true
+  - script: yarn --ignore-engines
+    displayName: 'Install dependencies'
+  - script: yarn test
+    displayName: 'Test'

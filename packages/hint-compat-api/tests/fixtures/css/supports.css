@@ -1,0 +1,11 @@
+@supports (display: grid) {
+    div {
+        display: grid;
+    }
+}
+
+@supports (display: flex) {
+    .content {
+        display: grid; /* Report */
+    }
+}

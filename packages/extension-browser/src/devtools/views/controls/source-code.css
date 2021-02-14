@@ -1,0 +1,144 @@
+.root {
+    display: block;
+    background-color: var(--code-bg) !important;
+    border-radius: var(--rounding);
+    box-shadow: var(--code-shadow);
+    box-sizing: border-box;
+    color: var(--code-default-color);
+    font-size: 12px; /* rem units are incorrect here at runtime?!? */
+    margin: 0.375rem 0; /* 6px 0 */
+    overflow-x: auto;
+    word-break: break-word;
+    padding: 1rem; /* 16px */
+    white-space: pre-wrap;
+}
+
+.root :global(.css) {
+    color: var(--code-css-default-color);
+}
+
+.root :global(.html) {
+    color: var(--code-html-default-color);
+}
+
+.root :global(.http) {
+    color: var(--code-http-default-color);
+}
+
+.root :global(.token.script) {
+    color: var(--code-default-color);
+}
+
+.root :global(.token.boolean) {
+    color: var(--code-boolean-color);
+}
+
+.root :global(.token.class-name) {
+    color: var(--code-class-name-color);
+}
+
+.root :global(.token.comment) {
+    color: var(--code-comment-color);
+}
+
+.root :global(.token.function) {
+    color: var(--code-function-color);
+}
+
+.root :global(.token.function-variable) {
+    color: var(--code-function-variable-color);
+}
+
+.root :global(.token.keyword) {
+    color: var(--code-keyword-color);
+}
+
+.root :global(.token.keyword.header-name) {
+    color: var(--code-header-name-color);
+    font-weight: var(--code-header-name-font-weight);
+}
+
+.root :global(.token.operator) {
+    color: var(--code-operator-color);
+}
+
+.root :global(.token.parameter) {
+    color: var(--code-parameter-color);
+}
+
+.root :global(.token.punctuation) {
+    color: var(--code-punctuation-color);
+}
+
+.root :global(.token.number) {
+    color: var(--code-number-color);
+}
+
+.root :global(.token.string) {
+    color: var(--code-string-color);
+}
+
+.root :global(.token.doctype) {
+    color: var(--code-doctype-color);
+    font-style: var(--code-doctype-font-style);
+}
+
+.root :global(.token.tag .tag) {
+    color: var(--code-tag-color)
+}
+
+.root :global(.token.tag .punctuation) {
+    color: var(--code-tag-punctuation-color);
+}
+
+.root :global(.token.attr-name) {
+    color: var(--code-attr-name-color);
+}
+
+.root :global(.token.attr-value) {
+    color: var(--code-attr-value-color);
+}
+
+.root :global(.html .style-attr .token.property) {
+    color: var(--code-attr-value-color);
+}
+
+.root :global(.html .style-attr .attr-value .token.punctuation) {
+    color: var(--code-attr-value-color);
+}
+
+.root :global(.token.attr-value .punctuation) {
+    color: var(--code-attr-value-punctuation-color)
+}
+
+.root :global(.token.attr-value .punctuation:nth-child(1)) {
+    color: var(--code-attr-value-first-punctuation-color);
+}
+
+.root :global(.token.style-attr .punctuation) {
+    color: var(--code-attr-value-punctuation-color)
+}
+
+.root :global(.token.entity) {
+    color: var(--code-entity-color);
+}
+
+.root :global(.token.atrule) {
+    color: var(--code-atrule-color);
+}
+
+.root :global(.token.property) {
+    color: var(--code-property-color)
+}
+
+.root :global(.token.selector) {
+    color: var(--code-selector-color);
+}
+
+.root :global(.css .function) {
+    color: var(--code-css-function-color);
+}
+
+.root :global(.css .string) {
+    color: var(-code-css-string-color);
+}

@@ -1,0 +1,30 @@
+{
+    "connector": "puppeteer",
+    "formatters": [
+        "html",
+        "summary"
+    ],
+    "hints": {
+        "0": "x-content-type-options",
+        "1": "webpack-config/is-installed",
+        "2": "webpack-config/is-valid",
+        "3": "webpack-config/module-esnext-typescript",
+        "4": "webpack-config/modules-false-babel",
+        "5": "webpack-config/no-devtool-in-prod"
+    },
+    "hintsTimeout": 120000,
+    "parsers": [
+        "babel-config",
+        "css",
+        "html",
+        "javascript",
+        "jsx",
+        "less",
+        "manifest",
+        "package-json",
+        "sass",
+        "typescript",
+        "typescript-config",
+        "webpack-config"
+    ]
+}
