@@ -1,0 +1,93 @@
+{
+  "ava": {
+    "failFast": false,
+    "files": [
+      "dist/tests/**/*.js",
+      "!dist/tests/**/fixtures/**/*.js"
+    ],
+    "timeout": "1m"
+  },
+  "dependencies": {
+    {{{dependencyVersion "@hint/utils-debug"}}},{{#if packageData.official}}
+    {{{dependencyVersion "@hint/utils-i18n"}}},{{/if}}
+    {{{dependencyVersion "@hint/utils-types"}}}
+  },
+  "description": "{{description}}",
+  "devDependencies": {
+    {{{dependencyVersion "@hint/utils"}}},
+    {{{dependencyVersion "@hint/utils-create-server"}}},
+    {{{dependencyVersion "@hint/utils-tests-helpers"}}},
+    {{{dependencyVersion "@types/node"}}},
+    {{{dependencyVersion "@typescript-eslint/eslint-plugin"}}},
+    {{{dependencyVersion "@typescript-eslint/parser"}}},
+    {{{dependencyVersion "ava"}}},
+    {{{dependencyVersion "cpx"}}},
+    {{{dependencyVersion "eslint"}}},
+    {{{dependencyVersion "eslint-plugin-markdown"}}},
+    {{{dependencyVersion "npm-run-all"}}},
+    {{{dependencyVersion "nyc"}}},
+    {{{dependencyVersion "rimraf"}}},
+    {{{dependencyVersion "typescript"}}}
+  },
+  "files": [
+    "dist/src"{{#if isMulti}},
+    "docs"{{/if}}
+  ],{{#if official}}
+  "homepage": "https://webhint.io/",{{else}}
+  "homepage": "",{{/if}}
+  "keywords": [
+    "hint",
+    "{{normalizedName}}",{{#if isParser}}
+    "{{normalizedName}}-parser"{{else}}
+    "{{normalizedName}}-hint"{{/if}}
+  ],
+  "license": "Apache-2.0",
+  "main": "{{packageMain}}",
+  "name": "{{packageName}}",{{#if official}}
+  "nyc": {
+    "extends": "../../.nycrc"
+  },{{else}}
+  "nyc": {
+    "branches": 85,
+    "cache": true,
+    "check-coverage": true,
+    "functions": 80,
+    "instrument": true,
+    "lines": 85,
+    "reporter": [
+        "lcov",
+        "text"
+    ],
+    "sourceMap": true,
+    "statements": 85
+  },{{/if}}
+  "peerDependencies": {
+   {{{dependencyVersion "hint"}}}
+  },
+  "private": true,{{#if official}}
+  "repository": "webhintio/hint",{{else}}
+  "repository": "",{{/if}}
+  "scripts": {
+    "build": "{{#if official}}npm run i18n && {{/if}}npm-run-all build:*",
+    "build-release": "npm run clean && {{#if official}}npm run i18n && {{/if}}npm run build:assets && tsc --inlineSourceMap false --removeComments true",
+    "build:assets": "cpx \"./{src,tests}/**/{!(*.ts),.!(ts)}\" dist",
+    "build:ts": "tsc -b",
+    "clean": "rimraf dist",{{#if official}}
+    "i18n": "node ../../scripts/create-i18n.js",{{/if}}
+    "lint": "npm-run-all lint:*",{{#if official}}
+    "lint:js": "eslint . --cache --ext .js,.md,.ts --ignore-path ../../.eslintignore",
+    "lint:dependencies": "node ../../scripts/lint-dependencies.js",
+    "lint:md": "node ../../scripts/lint-markdown.js",{{else}}
+    "lint:js": "eslint . --cache --ext .js,.md,.ts",
+    "lint:md": "markdownlint --ignore CHANGELOG.md *.md",{{/if}}
+    "test": "{{#if official}}npm run i18n && {{/if}}npm run lint && npm run build && npm run test-only",
+    "test-only": "nyc ava",{{#if official}}
+    "test-release": "{{#if official}}npm run i18n && {{/if}}npm run lint && npm run build-release && ava",{{/if}}
+    "init": "npm install && npm run build",
+    "watch": "npm run build && npm-run-all --parallel -c watch:*",
+    "watch:assets": "npm run build:assets -- -w --no-initial",
+    "watch:test": "ava --watch",
+    "watch:ts": "npm run build:ts -- --watch"
+  },
+  "version": "0.0.1"
+}

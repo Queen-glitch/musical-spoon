@@ -1,0 +1,18 @@
+# Scope the validations to main and PRs to main
+trigger:
+  - main
+pr:
+  - main
+
+# Changes in main
+jobs:
+  - template: azure-pipelines/main.yml
+
+  # PRs
+  - template: azure-pipelines/pr.yml
+
+  # Dependabot PRs
+  - template: azure-pipelines/dependabot.yml
+
+  # Daily full run (configured via dashboard)
+  - template: azure-pipelines/scheduled.yml

@@ -1,0 +1,13 @@
+.root {
+    min-height: 100%;
+}
+
+.root.disabled {
+    filter: blur(10px);
+}
+
+.fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}

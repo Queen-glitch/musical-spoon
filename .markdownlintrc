@@ -1,0 +1,14 @@
+{
+    "MD013": {
+        "code_blocks": false,
+        "tables": false
+    },
+    "MD014": false,
+    "MD026": {
+        "punctuation": ".,;:!"
+    },
+    "MD029": false,
+    "MD033": {
+        "allowed_elements": ["br", "details", "summary"]
+    }
+}
