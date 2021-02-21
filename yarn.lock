@@ -1439,10 +1439,10 @@ amphtml-validator@^1.0.34:
     commander "2.15.1"
     promise "8.0.1"
 
-angular@1.4.9:
-  version "1.4.9"
-  resolved "https://registry.yarnpkg.com/angular/-/angular-1.4.9.tgz#e60c91d69b94cf1349ce38a04fa8f92d6003d2ac"
-  integrity sha1-5gyR1puUzxNJzjigT6j5LWAD0qw=
+angular@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/angular/-/angular-1.8.0.tgz#b1ec179887869215cab6dfd0df2e42caa65b1b51"
+  integrity sha512-VdaMx+Qk0Skla7B5gw77a8hzlcOakwF8mjlW13DpIWIDlfqwAbSSLfd8N/qZnzEmQF4jC4iofInd3gE7vL8ZZg==
 
 ansi-align@^3.0.0:
   version "3.0.0"
